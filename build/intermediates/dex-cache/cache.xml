@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_fcd2578c1d4ea3988c31a6ddcaefc45fc884174c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="268b60d2f2aa5deee2e2c5ee36f010271fb0ed36">
+        <dex dex="/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_3ba0547c099af9e4aa344c8734f8fa9940b2ed27/classes.dex" />
+    </item>
+
+</items>

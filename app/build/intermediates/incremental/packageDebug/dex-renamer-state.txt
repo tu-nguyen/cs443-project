@@ -1,0 +1,7 @@
+#Thu Dec 07 07:21:18 EST 2017
+base.0=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_fcd2578c1d4ea3988c31a6ddcaefc45fc884174c
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_3ba0547c099af9e4aa344c8734f8fa9940b2ed27/classes.dex
+base.1=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_3ba0547c099af9e4aa344c8734f8fa9940b2ed27
+file.0=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_fcd2578c1d4ea3988c31a6ddcaefc45fc884174c/classes.dex

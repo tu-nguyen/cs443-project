@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 45,
+                    "endOffset": 96
+                },
+                "from": {
+                    "file": "/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 687,
+                        "endColumn": 45,
+                        "endOffset": 728
+                    }
+                }
+            }
+        ]
+    }
+]

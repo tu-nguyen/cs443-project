@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/res/merged/debug/drawable-hdpi/whitehole.png",
+        "source": "/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/src/main/res/drawable-hdpi/whitehole.png"
+    },
+    {
+        "merged": "/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/res/merged/debug/drawable-hdpi/ball.png",
+        "source": "/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/src/main/res/drawable-hdpi/ball.png"
+    },
+    {
+        "merged": "/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/res/merged/debug/drawable-hdpi/blackhole.png",
+        "source": "/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/src/main/res/drawable-hdpi/blackhole.png"
+    }
+]

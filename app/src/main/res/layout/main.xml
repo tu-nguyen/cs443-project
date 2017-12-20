@@ -13,11 +13,64 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:stretchColumns="4"
+    tools:context="com.example.android.rollinit.RollinItActivity">
 
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/bar">
+
+        <TextView
+            android:id="@+id/winScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="51dp"
+            android:layout_toEndOf="@+id/winTitle"
+            android:text="- -" />
+
+        <TextView
+            android:id="@+id/winTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:text="Wins: " />
+
+        <TextView
+            android:id="@+id/loseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/winScore"
+            android:layout_marginStart="104dp"
+            android:text="Loses:" />
+
+        <TextView
+            android:id="@+id/loseScpre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="59dp"
+            android:text="--" />
+    </RelativeLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/wood"
     >
+
 </FrameLayout>
+</LinearLayout>

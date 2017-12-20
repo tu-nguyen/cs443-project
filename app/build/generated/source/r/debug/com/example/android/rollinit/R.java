@@ -16,6 +16,13 @@ public final class R {
         public static final int whitehole=0x7f020002;
         public static final int wood=0x7f020003;
     }
+    public static final class id {
+        public static final int bar=0x7f060000;
+        public static final int loseScpre=0x7f060004;
+        public static final int loseTitle=0x7f060003;
+        public static final int winScore=0x7f060001;
+        public static final int winTitle=0x7f060002;
+    }
     public static final class layout {
         public static final int main=0x7f040000;
     }

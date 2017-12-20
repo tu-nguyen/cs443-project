@@ -38,6 +38,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import java.util.Random;
@@ -62,6 +63,7 @@ public class RollinItActivity extends Activity {
     private WindowManager mWindowManager;
     private Display mDisplay;
     private WakeLock mWakeLock;
+    private Activity mainA;
 
     /** Called when the activity is first created. */
     @Override
@@ -83,8 +85,10 @@ public class RollinItActivity extends Activity {
                 .getName());
 
         // instantiate our simulation view and set it as the activity's content
+
         mSimulationView = new SimulationView(this);
         mSimulationView.setBackgroundResource(R.drawable.wood);
+
         setContentView(mSimulationView);
     }
 
@@ -208,26 +212,6 @@ public class RollinItActivity extends Activity {
                     mVelY = 0;
                 }
             }
-            public void resolveCollisionWithBounds2() {
-                final float xmax = mHorizontalBound;
-                final float ymax = mVerticalBound;
-                final float x = mPosX;
-                final float y = mPosY;
-                if (x > xmax) {
-                    mPosX = xmax;
-                    mVelX = 0;
-                } else if (x < -xmax) {
-                    mPosX = -xmax;
-                    mVelX = 0;
-                }
-                if (y > ymax) {
-                    mPosY = ymax;
-                    mVelY = 0;
-                } else if (y < -ymax) {
-                    mPosY = -ymax;
-                    mVelY = 0;
-                }
-            }
         }
 
         /*
@@ -316,7 +300,7 @@ public class RollinItActivity extends Activity {
             private void updatePositions(float sx, float sy, long timestamp) {
                 final long t = timestamp;
                 if (mLastT != 0) {
-                    final float dT = (float) (t - mLastT) / 1000.f /** (1.0f / 1000000000.0f)*/;
+                    final float dT = (float) (t - mLastT) / 2000.f /** (1.0f / 1000000000.0f)*/;
                         final int count = mBalls.length;
                         for (int i = 0; i < count; i++) {
                             Particle ball = mBalls[i];
@@ -424,12 +408,41 @@ public class RollinItActivity extends Activity {
             mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_GAME);
         }
 
+        public void resetSimulation() {
+            // Get an instance of the SensorManager
+            mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+
+            // Get an instance of the PowerManager
+            mPowerManager = (PowerManager) getSystemService(POWER_SERVICE);
+
+            // Get an instance of the WindowManager
+            mWindowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
+            mDisplay = mWindowManager.getDefaultDisplay();
+
+            // Create a bright wake lock
+            mWakeLock = mPowerManager.newWakeLock(PowerManager.SCREEN_BRIGHT_WAKE_LOCK, getClass()
+                    .getName());
+
+            // instantiate our simulation view and set it as the activity's content
+
+            mSimulationView = new SimulationView(super.getContext());
+            mSimulationView.setBackgroundResource(R.drawable.wood);
+
+            setContentView(mSimulationView);
+
+            mSimulationView.startSimulation();
+
+            //mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_GAME);
+        }
+
         public void stopSimulation() {
             mSensorManager.unregisterListener(this);
         }
 
         public SimulationView(Context context) {
             super(context);
+            //View bar = findViewById(R.id.bar);//bar.bringToFront();
+
             mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 
             DisplayMetrics metrics = new DisplayMetrics();
@@ -440,8 +453,8 @@ public class RollinItActivity extends Activity {
             mMetersToPixelsY = mYDpi / 0.0254f;
 
             // rescale the ball so it's about 0.5 cm on screen
-            mDstWidth = (int) (sBallDiameter * mMetersToPixelsX + 0.5f);
-            mDstHeight = (int) (sBallDiameter * mMetersToPixelsY + 0.5f);
+            mDstWidth = (int) (sBallDiameter * mMetersToPixelsX + 0.7f);
+            mDstHeight = (int) (sBallDiameter * mMetersToPixelsY + 0.7f);
             mParticleSystem = new ParticleSystem();
 
             Options opts = new Options();
@@ -547,6 +560,7 @@ public class RollinItActivity extends Activity {
                         mSimulationView.stopSimulation();
                         Toast.makeText(getContext(), "Lose",
                                 Toast.LENGTH_LONG).show();
+                        //mSimulationView.startSimulation();
                         test = true;
                     }
 
@@ -554,6 +568,10 @@ public class RollinItActivity extends Activity {
                         mSimulationView.stopSimulation();
                         Toast.makeText(getContext(), "Win",
                                 Toast.LENGTH_LONG).show();
+
+                        mSimulationView.resetSimulation();
+
+
                         test = true;
                     }
                 }

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Dec 07 07:21:14 EST 2017
+#Tue Dec 19 21:26:27 EST 2017
 8.set=ANDROID_RESOURCE
 1.base=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/res/resources-debug.ap_
 1.file=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml

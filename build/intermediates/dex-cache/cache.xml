@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="268b60d2f2aa5deee2e2c5ee36f010271fb0ed36">
+        sha1="fed58b286767c27e0e9ff80995fe36f63cf6a1c1">
         <dex dex="/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_3ba0547c099af9e4aa344c8734f8fa9940b2ed27/classes.dex" />
     </item>
 

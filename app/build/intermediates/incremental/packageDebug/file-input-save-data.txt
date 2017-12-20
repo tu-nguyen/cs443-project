@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Dec 07 07:21:18 EST 2017
+#Tue Dec 19 21:26:29 EST 2017
 8.set=ANDROID_RESOURCE
 1.base=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/res/resources-debug.ap_
 1.file=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/blackhole.png
@@ -10,7 +10,7 @@
 5.file=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/ball.png
 7.base=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_3ba0547c099af9e4aa344c8734f8fa9940b2ed27
 7.file=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_3ba0547c099af9e4aa344c8734f8fa9940b2ed27/classes.dex
-11.file=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/res/resources-debug.ap_/res/mipmap-hdpi-v4/ic_launcher.png
+11.file=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/res/resources-debug.ap_/res/layout/main.xml
 11.base=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/res/resources-debug.ap_
 9.base=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/res/resources-debug.ap_
 9.file=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/res/resources-debug.ap_/res/mipmap-xxhdpi-v4/ic_launcher.png
@@ -36,7 +36,7 @@
 8.base=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/res/resources-debug.ap_
 8.file=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/whitehole.png
 2.set=DEX
-12.file=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/res/resources-debug.ap_/res/layout/main.xml
+12.file=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/res/resources-debug.ap_/res/mipmap-hdpi-v4/ic_launcher.png
 12.base=/home/valcrune/Projects/Android Studio/CS443/RollinIt/app/build/intermediates/res/resources-debug.ap_
 9.set=ANDROID_RESOURCE
 count=14
